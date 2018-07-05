@@ -8,12 +8,12 @@ set hlsearch
 set autoindent 
 
 "auto compele for ( , " , ' , { ,[ 
-inoremap    (  ()<Left> 
-inoremap    "  ""<Left> 
-inoremap    `  ``<Left> 
-inoremap    '  ''<Left> 
-inoremap    [  []<Left> 
-inoremap    {  {}<Left> 
+"inoremap    (  ()<Left> 
+"inoremap    "  ""<Left> 
+"inoremap    `  ``<Left> 
+"inoremap    '  ''<Left> 
+"inoremap    [  []<Left> 
+"inoremap    {  {}<Left> 
 
 
 autocmd FileType c,cpp,java,scala let b:comment_leader = '// ' 
