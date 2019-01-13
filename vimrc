@@ -28,12 +28,13 @@ noremap <silent> #4 :tabnext<CR>
 map <F8> :setlocal spell! spelllang=en_us<CR> 
 set pastetoggle=<F2> 
 
+"jedi settings
 
 
 
 "nerdtree settings 
 
-map <F9> :NERDTreeToggle<CR> 
+map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1 
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif 
 
@@ -44,6 +45,8 @@ let NERDTreeMapOpenInTab='<c-t>'
 
 call plug#begin('~/.vim/plugged') 
 
+Plug 'https://github.com/davidhalter/jedi-vim'
+Plug 'https://github.com/Yggdroot/indentLine'
 Plug 'https://github.com/scrooloose/nerdtree' 
 
 call plug#end() 
