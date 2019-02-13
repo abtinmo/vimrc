@@ -5,8 +5,10 @@ set nowrap
 set noswapfile 
 set hlsearch 
 set autoindent 
+set mat=2
+set spelllang=en
 
-"auto compele for ( , " , ' , { ,[ 
+"auto complete for ( , " , ' , { ,[ 
 inoremap    (  ()<Left>
 inoremap    "  ""<Left>
 inoremap    `  ``<Left>
@@ -25,10 +27,10 @@ set pastetoggle=<F2>
 map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1 
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif 
-
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif 
-
 let NERDTreeMapOpenInTab='<c-t>' 
+
+
 
 
 call plug#begin('~/.vim/plugged') 
