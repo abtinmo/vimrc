@@ -7,6 +7,8 @@ set hlsearch
 set autoindent 
 set mat=2
 set spelllang=en
+fixdel
+set backspace=indent,eol,start
 
 "auto complete for ( , " , ' , { ,[ 
 inoremap    (  ()<Left>
