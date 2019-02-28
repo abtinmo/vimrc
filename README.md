@@ -15,3 +15,7 @@ DONE
 
 
 font  :  https://sourcefoundry.org/hack/
+
+build vim from source with this config :
+
+./configure --enable-pythoninterp --with-features=huge --prefix=/usr/local/opt/vim --with-python-config-dir=/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/config-3.7m-darwin/ --enable-python3interp=/usr/local/bin/python3
